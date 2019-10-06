@@ -1,0 +1,786 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* BODY STYLING */
+body.home {
+	font-family:"Arial";
+	background:url("/../imgs/kudamm.jpg");
+	/* background:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/imgs/kudamm.jpg"); */
+	background-position: center;
+	background-origin: content-box;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+body {
+	font-family:"Arial";
+}
+
+/* HEADER STYLING*/
+header {
+	background:#6eabe5;
+	background:url("/../imgs/kudamm.jpg");
+	/* background:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/imgs/kudamm.jpg"); */
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position: 50% 29%;
+	text-align:center;
+	margin-bottom:2%;
+}
+
+header h1 {
+	color:#FFFFFF;
+	font-size: 300%;
+	/* text-align:right; */
+	font-family: timeburnerbold;
+}
+
+header h2 {
+	color:#FFFFFF;
+	font-size: 100%;
+	font-family: timeburnerbold;
+}
+
+header.home {
+	background: #FFFFFF;
+}
+
+header figure img {
+	width: 100%;
+	display: inline-block;
+}
+
+header.home h1 {
+	color: #96bee2;
+	font-size: 285%;
+	margin-top: 1%;
+	/* text-shadow:2px 0 black; */
+	text-align:center;
+}
+
+header.home h2 {
+	color: #96bee2;
+	/* padding-top: 25%; */
+	font-size: 100%;
+	/* text-shadow:2px 0 black; */
+	text-align:center;
+}
+
+/* Navigation */
+nav div {
+	display: inline-block;
+	width: 25%;
+	/* font-size: 95%; */
+	/* margin:0.25% 2% 2%; */
+	/* border: 2px solid; */
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 100%;
+	text-align:center;
+	padding: 6%;
+	color: #FFFFFF;
+	border-radius: 5px;
+	/* background-color:rgba(255,255,255,1); */
+	width: 100%;
+	/* border:1px solid; */
+	/*margin:0.25% 2% 2%;*/
+}
+
+@media (max-width: 544px) {
+  nav a {font-size: 78%;} /*1rem = 16px*/
+}
+
+.active {
+	background: #FFFFFF;
+	/* outline: 1px #96bee2 solid; */
+	color: #96bee2;
+}
+
+header.home nav a {
+	color: #96bee2;
+}
+
+header.home nav a.active {
+	color: #FFFFFF;
+	background: #96bee2;
+}
+
+header.home nav a:hover {
+	color: #FFFFFF;
+	background:#0068c5;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	background: #0068c5;
+}
+
+nav div.dropdown:hover {
+	color: #FFFFFF;
+	background: #0068c5;
+	border-radius: 5px;
+}
+
+.dropdown a {
+	width:100%;
+}
+
+div.dropdown-content {
+    display: none;
+    position: absolute;
+		width: 100%;
+		/* outline: 1px #0068c5 solid; */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+		color: #FFFFFF;
+    background:#0068c5;
+    text-decoration: none;
+		/* border-radius: 0px; */
+    /* margin-top:5%; */
+    display: inline-block;
+}
+
+header.home .dropdown-content a {
+	color: #FFFFFF;
+	background:#0068c5;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	color: #FFFFFF;
+	background: #96bee2;
+}
+
+header.home .dropdown-content a:hover {
+	color: #96bee2;
+	background: #FFFFFF;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+		z-index: 9999;
+}
+
+/* MAIN STYLING*/
+
+	/*Generic- ALL PAGES*/
+
+.right {
+	float:right;
+}
+
+.left {
+	float:left;
+}
+
+	/*Index Page*/
+
+main.home>figure.left {
+	width:20%;
+	padding-left:2%;
+}
+
+main.home img {
+	width:85%;
+	display:block;
+	margin: 0 auto;
+	border: 2px solid;
+}
+
+main.home div.right
+{
+	display:inline-block;
+	width:60%;
+	padding-right:5%;
+	height: 350px;
+	overflow:hidden;
+}
+
+main.home div.right h2
+{
+	font-size:22px;
+	color:#96bee2;
+	/*text-shadow:1px 0 #000000;*/
+}
+
+main.home div.right p
+{
+	font-size:14px;
+}
+
+/* ALL SECTIONS */
+
+div.head {
+	height: 60px;
+}
+
+div.head h1 {
+	font-size: 200%;
+	color:#96bee2;
+	text-align:center;
+}
+
+/*About Page*/
+
+main.about img {
+	width: 90%;
+	max-width:90%;
+	max-height:90%;
+	/* position: absolute; */
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	/* transform: translate(-50%, -50%); */
+	border: 2px solid;
+}
+
+/*CV Page*/
+
+/* Section */
+
+/* Arrow Images*/
+main.cv div.row {
+	margin: 3%;
+}
+
+main.cv h1 {
+	color: #FFFFFF;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+main.cv div.head {
+	background: #96bee2;
+}
+
+main.cv div.head img {
+	width: 53px;
+	color:#96bee2;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* Education Section*/
+
+main.cv div img {
+	width:90%;
+	/* display: block; */
+	margin-bottom: 3%;
+	padding:2px;
+	border: 2px solid;
+}
+
+main.cv div.logos img {
+	width:100%;
+	display: block;
+	margin-bottom: 3%;
+	padding:2px;
+	border: 2px solid;
+}
+
+main.cv div.vertical {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+main.cv div h2 {
+	margin:0;
+	font-size:18px;
+}
+
+main.cv div p {
+	font-size:14px;
+	margin:0;
+}
+
+main.cv div ul {
+	font-size:14px;
+	margin:0;
+}
+
+/* SKILLS SECTION */
+/* Primary Skills Formatting */
+div.left.skills {
+	display: inline-block;
+	width:25%;
+	margin-left: 2%;
+	padding: 1%;
+	padding-left:5%;
+	padding-top:50px;
+	overflow:hidden;
+	/* border: 1px solid; */
+}
+
+div.left.skills img {
+	display:inline-block;
+	padding: 2px;
+	width:60%;
+	border:2px solid #000000;
+	margin-bottom:6%;
+	max-height:115px;
+}
+
+div.right.skills {
+	display: inline-block;
+	width: 62%;
+	margin: 1%;
+	padding: 1%;
+	padding-top:24px;
+	overflow:hidden;
+	/* border: 1px solid; */
+}
+
+div.right.skills h2 {
+	font-size:18px;
+}
+
+div.right.skills ul {
+	font-size:14px;
+	margin:0;
+}
+
+hr.cv {
+	display:block;
+	border-color:#96bee2;
+	background-color: #96bee2;
+	color:#96bee2;
+	width: 70%;
+	height: 2px;
+}
+
+/* Microsoft Block */
+div.skills.microsoft {
+	height : 130px;
+}
+
+/* Database Block */
+div.skills.database {
+	height : 180px;
+}
+
+/* Server-Side Block */
+div.skills.serverside {
+	height : 300px;
+}
+
+div.left.skills.serverside img {
+	margin-bottom:2%;
+	max-height:70px;
+}
+
+div.right.skills.serverside {
+	padding-top:80px;
+	height: 190px;
+}
+
+/* Frontend Block */
+div.skills.frontend {
+	height : 230px;
+}
+
+/* Other Block */
+div.skills.other {
+	height : 350px;
+}
+
+div.left.skills.other img {
+	margin-bottom:2%;
+	max-height:60px;
+}
+
+div.right.skills.other {
+	padding-top:100px;
+	height: 250px;
+}
+
+/* Experience Section*/
+
+/* Left DIVS */
+
+div.left.experience {
+	display: inline-block;
+	width:30%;
+	height:230px;
+	margin: 1%;
+	padding: 1%;
+}
+
+div.left.experience.wayfair {
+	display: inline-block;
+	width:30%;
+	height:400px;
+	margin: 1%;
+	padding: 1%;
+}
+
+div.left.experience.covanta
+{
+	display: inline-block;
+	width:30%;
+	height:230px;
+	margin: 1%;
+	padding: 1%;
+}
+
+div.left.experience.eraz
+{
+	display: inline-block;
+	width:30%;
+	height:330px;
+	margin: 1%;
+	padding: 1%;
+}
+
+div.left.experience.mspc
+{
+	display: inline-block;
+	width:30%;
+	height:190px;
+	margin: 1%;
+	padding: 1%;
+}
+
+div.left.experience.mirra
+{
+	display: inline-block;
+	width:30%;
+	height:230px;
+	margin: 1%;
+	padding: 1%;
+}
+
+div.left.experience.axp
+{
+	display: inline-block;
+	width:30%;
+	height:190px;
+	margin: 1%;
+	padding: 1%;
+}
+
+div.left.experience img
+{
+	display:block;
+	width:80%;
+	padding:2px;
+	border:2px solid #000000;
+}
+
+div.left.experience.wayfair img {
+	display:block;
+	border:2px solid #000000;
+	margin-bottom:3%;
+	padding: 5px;
+	max-height:200px;
+}
+
+div.left.experience.eraz img
+{
+	display:block;
+	width:32%;
+	border:2px solid #000000;
+	margin-bottom:7%;
+	margin-left:25%;
+	max-height:200px;
+}
+
+div.left.experience.mspc img
+{
+	display:block;
+	width:50%;
+	border:2px solid #000000;
+	margin-bottom:7%;
+	margin-left:15%;
+	max-height:200px;
+}
+
+div.left.experience.mirra img
+{
+	display:block;
+	width:50%;
+	border:2px solid #000000;
+	margin-bottom:7%;
+	margin-left:15%;
+	max-height:200px;
+}
+
+div.left.experience.axp img
+{
+	display:block;
+	width:35%;
+	border:2px solid #000000;
+	margin-bottom:7%;
+	margin-left:22%;
+	max-height:200px;
+}
+
+/* right DIVS */
+
+div.right.experience
+{
+	display: inline-block;
+	width:62%;
+	height:230px;
+	margin: 1%;
+	padding: 1%;
+	overflow:hidden;
+}
+
+div.right.experience.wayfair
+{
+	display: inline-block;
+	width:62%;
+	height:400px;
+	margin: 1%;
+	padding: 1%;
+	overflow:hidden;
+}
+
+div.right.experience.covanta
+{
+	display: inline-block;
+	width:62%;
+	height:230px;
+	margin: 1%;
+	padding: 1%;
+	overflow:hidden;
+}
+
+div.right.experience.eraz
+{
+	display: inline-block;
+	width:62%;
+	height:330px;
+	margin: 1%;
+	padding: 1%;
+	overflow:hidden;
+}
+
+div.right.experience.mspc
+{
+	display: inline-block;
+	width:62%;
+	height:190px;
+	margin: 1%;
+	padding: 1%;
+	overflow:hidden;
+}
+
+div.right.experience.mirra
+{
+	display: inline-block;
+	width:62%;
+	height:230px;
+	margin: 1%;
+	padding: 1%;
+	overflow:hidden;
+}
+
+div.right.experience.axp
+{
+	display: inline-block;
+	width:62%;
+	height:190px;
+	margin: 1%;
+	padding: 1%;
+	overflow:hidden;
+}
+
+div.right.experience h2
+{
+	margin:0;
+	font-size:18px;
+}
+
+div.right.experience p
+{
+	font-size:14px;
+	margin:0;
+}
+
+div.right.experience ul
+{
+	font-size:14px;
+	margin:0;
+}
+
+/*Coursework Styling*/
+div.left.coursework {
+	display: inline-block;
+	width:25%;
+	margin-left: 2%;
+	padding: 1%;
+	padding-left:5%;
+	padding-top:50px;
+	overflow:hidden;
+}
+
+div.left.coursework img {
+	display:inline-block;
+	padding: 2px;
+	width:60%;
+	border:2px solid #000000;
+	margin-bottom:6%;
+	margin-left:-2.5%;
+	max-height:300px;
+}
+
+div.right.coursework {
+	display: inline-block;
+	width: 62%;
+	margin: 1%;
+	padding: 1%;
+	padding-top:24px;
+	overflow:hidden;
+}
+
+div.coursework.it {
+	height : 290px;
+}
+
+div.coursework.business {
+	height : 480px;
+}
+
+/*CONTACT PAGE */
+main.contact img {
+	width:75%;
+	margin: 10%;
+	display: block;
+	margin: 0 auto;
+	border: 2px solid;
+}
+
+main.contact div.contactText {
+	margin-top: 20%;
+}
+
+main.contact div h2{
+	text-align:center;
+	font-size: 200%;
+	color:#96bee2;
+}
+
+main.contact div {
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+main.contact div p {
+	text-align:center;
+	font-size: 150%;
+}
+
+main.contact a img {
+  border:2px solid #000000;
+  padding: 2%;
+}
+
+main.contact div.profile a img {
+  max-height: 130px;
+}
+
+hr.contact {
+	display:block;
+	border-color:#96bee2;
+	background-color: #96bee2;
+	color:#96bee2;
+	width: 100%;
+	height: 2px;
+}
+
+/*CODE PAGE*/
+main.code h1 {
+	font-size: 30px;
+	color:#96bee2;
+	text-align:center;
+}
+
+main.code div {
+	display: inline-block;
+	width:10%;
+	height:200px;
+	margin: 1%;
+	padding: 1%;
+	margin-left:1.5%;
+	/* border: 1px solid; */
+}
+
+main.code div img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+	/* border:2px solid #000000; */
+	max-height:200px;
+}
+
+/*COURSERA PAGE*/
+main.coursera h1 {
+	font-size: 30px;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+main.coursera img {
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 1%;
+	width:48%;
+	border:2px solid #000000;
+}
+
+/*FOOTER STYLING*/
+
+footer {
+	padding: 1%;
+	text-align:center;
+	background:url("/../imgs/kudammCut.jpg");
+	/* background:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/imgs/kudammCut.jpg"); */
+	clear:both;
+	/* text-shadow:2px 0 black; */
+	color:#FFFFFF;
+	font-size:18px;
+}
+
+footer.home {
+	position: absolute;
+	bottom: 0;
+	text-align:center;
+	width: 100%;
+	background:#FFFFFF;
+	clear:both;
+	color: #96bee2;
+	font-size: 110%;
+}
+
+footer img {
+	width: 30px;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+/* FONTS */
+@font-face {
+  font-family: timeburnerbold;
+	src:url("/../fonts/timeburnerbold.ttf");
+	/* src:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/fonts/timeburnerbold.ttf"); */
+}

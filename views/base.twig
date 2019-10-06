@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- title -->
+	<title>Anthony Barretti - {% block title %} Page Name {% endblock %}</title>
+	<!-- link -->
+	<link rel="icon" type="image/png" href="{{ url }}/imgs/sphereBlue.png">
+	<link rel="stylesheet" href="{{ url }}/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ url }}/node_modules/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{{ url }}/node_modules/bootstrap-social/bootstrap-social.css">
+	<link rel="stylesheet" href="{{ url }}/css/stylesheet.css">
+</head>
+{% block body %} Body Class {% endblock %}
+{% block header %} Header Class {% endblock %}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-lg-5">
+				<a href="{{ url }}">
+					<h1>Anthony Barretti</h1>
+				</a>
+			</div>
+			<div class="d-none d-lg-block col-lg-1">
+				<a href="{{ url }}">
+					<figure>
+						<img src= "{{ url }}/imgs/sphereBlue.png" alt= "Sphere Blue">
+					</figure>
+				</a>
+			</div>
+			<div class="col-md-12 col-lg-6">
+				<nav class="navbar">
+						<div><a href="{{ url }}" {{ dir == '' or (dir == 'AnthonyBarrettiSiteSILEXBootstrap' and test) ? 'class="active"' : '' }}>Home</a></div>
+						<div><a href="{{ url }}{{ test ? '/index.php' : '' }}/about" {{ dir == 'about' ? 'class="active"' : '' }}>About</a></div>
+						<div class="dropdown">
+								<a href="{{ url }}{{ test ? '/index.php' : '' }}/cv" {{ dir == 'cv' ? 'class="active"' : '' }}>CV</a>
+								<div class="dropdown-content">
+								<a href="{{ url }}{{ test ? '/index.php' : '' }}/cv#education">Education</a>
+								<a href="{{ url }}{{ test ? '/index.php' : '' }}/cv#skills">Skills</a>
+								<a href="{{ url }}{{ test ? '/index.php' : '' }}/cv#experience">Experience</a>
+								<a href="{{ url }}{{ test ? '/index.php' : '' }}/cv#coursework">Coursework</a>
+								</div>
+						</div>
+						<div><a href="{{ url }}{{ test ? '/index.php' : '' }}/contact" {{ dir == 'contact' ? 'class="active"' : '' }}>Contact</a></div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+	{% block main %} {% endblock %}
+{% block footer %} Footer Class {% endblock %}
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-3">
+				<a href="https://www.linkedin.com/in/anthony-barretti-95a57687/" class="image" target="_blank">
+					<img src="{{ url }}/imgs/linkedIn_logo_initials.png" alt= "LinkedIn Logo"/>
+				</a>
+				<a href="https://github.com/abarretti/" class="image" target="_blank">
+					<img src="{{ url }}/imgs/gitHub-mark-120px-plus.png" alt= "Github Logo"/>
+				</a>
+				<a href="https://www.hackerrank.com/aebarretti87/" class="image" target="_blank">
+					<img src="{{ url }}/imgs/hackerRankMain.png" alt= "hackerRank Logo"/>
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				&copy; Anthony Barretti {{ "now"|date("Y") }}
+			</div>
+			<div class="col-sm-12 col-md-5">
+				<a href="https://www.coursera.org/user/f4d3550b3ade029ff335f7125cdbed51" class="image" target="_blank">
+					<img src="{{ url }}/imgs/coursera-logo.png" alt= "Coursera Logo"/>
+				</a>
+				<a href="https://www.udemy.com/user/anthony-barretti/" class="image" target="_blank">
+					<img src="{{ url }}/imgs/udemyU.png" alt= "Udemy Logo"/>
+				</a>
+				<a href="https://exercism.io/profiles/abarretti/" class="image" target="_blank">
+					<img src="{{ url }}/imgs/exercismMain.png" alt= "Exercism Logo"/>
+				</a>
+				<a href="https://www.codecademy.com/aebarretti87/" class="image" target="_blank">
+					<img src="{{ url }}/imgs/codeAcademy.png" alt= "CodeAcademy Logo"/>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+  <script src="{{ url }}/node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="{{ url }}/node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="{{ url }}/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
