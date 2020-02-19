@@ -15,6 +15,9 @@ CV
 {% block header %}
 
 	<header>
+	<button class='navbar-toggler d-block d-lg-none' data-toggle='collapse' data-target='#collapseNavBar'>
+		<img src="{{ url }}/imgs/barsWhite.png" alt="navbar toggler">
+	</button>
 
 {% endblock %}
 
@@ -25,9 +28,17 @@ CV
 			<section>
 				<div class="row head" id="education">
 					<div class="col-sm-12">
+						<a onclick="openClose('education')">
+							<img id="educationImage" class="openClose" src="{{ url }}/imgs/minusSign.png" alt= "minus">
+						</a>
 						<h1>Education</h1>
+						<a href="#top">
+							<img src= "{{ url }}/imgs/arrowUp.png" alt= "Arrow Up">
+						</a>
 					</div>
 				</div>
+			</section>
+			<section id="educationContent" class="cvContent">
 				<div class="row">
 					<div class="col-sm-12 col-md-4">
 						<img src= "{{ url }}/imgs/oxford.png" alt= "Oxford">
@@ -66,12 +77,17 @@ CV
 			<section>
 				<div class="row head" id="skills">
 					<div class="col-sm-12">
+						<a onclick="openClose('skills')">
+							<img id="skillsImage" class="openClose" src="{{ url }}/imgs/minusSign.png" alt= "minus">
+						</a>
 						<h1>Skills</h1>
 						<a href="#top">
 							<img src= "{{ url }}/imgs/arrowUp.png" alt= "Arrow Up">
 						</a>
 					</div>
 				</div>
+			</section>
+			<section id="skillsContent" class="cvContent">
 				<div class="row">
 					<div class="col-sm-12 col-md-4">
 						<img src= "{{ url }}/imgs/microsoftOffice.png" alt= "Microsoft Office">
@@ -79,9 +95,9 @@ CV
 		  		<div class="col-sm-12 col-md-8">
 		      	<h2>Microsoft Office – 12+ years</h2>
 			      <ul>
-							<li>Word – 20 years</li>
-							<li>Excel – 13 years, 1 Certification</li>
-							<li>PowerPoint – 12 years</li>
+							<li>Word – 20+ years</li>
+							<li>Excel – 14 years, 1 Certification</li>
+							<li>PowerPoint – 13 years</li>
 							<li>Outlook – 6 years</li>
 						</ul>
 		  		</div>
@@ -98,14 +114,14 @@ CV
 						<ul>
 							<li>SQL (Structured Query Language) – 4 years, 3 Certifications</li>
 							<ul>
-								<li>Microsoft SQL Server – 3 years</li>
+								<li>Microsoft SQL Server – 3.5 years</li>
 								<li>MySQL– 3 years</li>
 								<li>Microsoft Access – 6 months</li>
 								<li>SQL Server Reporting Services – 3 months</li>
 							</ul>
-							<li>ELK Stack (ElasticSearch, LogStash, Kibana) – 1 year</li>
+							<li>ELK Stack (ElasticSearch, LogStash, Kibana) – 1.5 years</li>
 							<ul>
-								<li>Lucene Query Syntax – 1 year</li>
+								<li>Lucene Query Syntax – 1.5 years</li>
 								<li>Graphana – 3 months</li>
 							</ul>
 							<li>Datadog – 3 months</li>
@@ -130,6 +146,8 @@ CV
 							<li>Python – 2.5 years, 6 Certifications</li>
 							<ul>
 								<li>Django – 3 months</li>
+								<li>Flask – 3 months, 1 Certification</li>
+								<li>Jinja2 - 3 months, 1 Certification</li>
 							</ul>
 							<li>Node.js – 3 months, 2 Certifications</li>
 							<li>R – 3 months, 1 Certification</li>
@@ -140,6 +158,7 @@ CV
 				<div class="row">
 					<div class="col-sm-12 col-md-4">
 						<img src= "{{ url }}/imgs/hTML5_CSS_JavaScript.png" alt= "HTML5, CSS3, JavaScript">
+						<img src= "{{ url }}/imgs/react.png" alt= "React">
 					</div>
 					<div class="col-sm-12 col-md-8">
 						<h2>Front-End – 3 years</h2>
@@ -164,9 +183,25 @@ CV
 				<hr class="cv">
 				<div class="row">
 					<div class="col-sm-12 col-md-4">
+						<img src= "{{ url }}/imgs/dockerLong.png" alt= "Docker">
+						<img src= "{{ url }}/imgs/apacheKafka.png" alt= "Kafka">
+					</div>
+					<div class="col-sm-12 col-md-8">
+						<h2>Development Platforms</h2>
+						<ul>
+							<li>Docker – 6 months, 1 Certification</li>
+							<li>Apache Kafka – 6 months</li>
+							<li>Google Cloud Platform - 3 months, 1 Certification</li>
+							<li>Kubernetes - 3 months, 1 Certification</li>
+							<li>Flux Architecture - 3 months</li>
+						</ul>
+					</div>
+				</div>
+				<hr class="cv">
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
 						<img src= "{{ url }}/imgs/mvc.png" alt= "MVC (Model View Controller)">
 						<img src= "{{ url }}/imgs/git.png" alt= "Git">
-						<img src= "{{ url }}/imgs/httpFtp.png" alt= "FTP and HTTP">
 					</div>
 					<div class="col-sm-12 col-md-8">
 						<h2>Design Patterns, Version Control, Transfer Protocols &amp; Other Skills</h2>
@@ -180,10 +215,8 @@ CV
 								<li>XSLT (Extensible Stylesheet Language Transformations) – 1 year</li>
 								<li>XSD (XML Schema Definition) - 1 year</li>
 							</ul>
-							<li>Docker – 6 months</li>
 							<li>GraphQL – 3 months, 2 Certifications</li>
-							<li>Apache Kafka – 3 months</li>
-							<li>Flux Architecture - 3 months</li>
+							<li>Blockchain – 3 months, 1 Certification</li>
 						</ul>
 					</div>
 				</div>
@@ -191,10 +224,17 @@ CV
 	  	<section>
 				<div class="row head" id="experience">
 					<div class="col-sm-12">
+						<a onclick="openClose('experience')">
+							<img id="experienceImage" class="openClose" src="{{ url }}/imgs/minusSign.png" alt= "minus">
+						</a>
 						<h1>Experience</h1>
-						<a href="#top"><img src= "{{ url }}/imgs/arrowUp.png" alt= "Arrow Up"></a>
+						<a href="#top">
+							<img src= "{{ url }}/imgs/arrowUp.png" alt= "Arrow Up">
+						</a>
 					</div>
 				</div>
+			</section>
+			<section id="experienceContent" class="cvContent">
 				<div class="row">
 					<div class="col-sm-12 col-md-4">
 						<img src= "{{ url }}/imgs/wayfairLarge.gif" alt= "Wayfair">
@@ -208,7 +248,7 @@ CV
 		  			<p>Berlin, Germany</p>
 						<p><i>Software Engineer</i>, August 2018 - present</p>
 						<ul>
-							<li>Member of a Full Stack Engineering team supporting the EU Business' "Order Management Systems" Platform.</li>
+							<li>Member of a Full Stack Engineering team supporting the Company's Global Payments Platform.</li>
 							<li>Implement new functionality and resolve bugs pertaining to the client, server and database layers of the company's enterprise software system.</li>
 							<li>Collaborate and communicate with Product Managers in a fast-paced, agile environment to deploy software which meets functional demands and contributes to business goals.</li>
 							<li>Create, calculate and analyze KPI's pertaining to sprint health, in addition to presenting the team's deliverables directly to stakeholders.</li>
@@ -264,7 +304,6 @@ CV
 				<div class="row">
 					<div class="col-sm-12 col-md-4">
 						<img src= "{{ url }}/imgs/runningLate.jpg" alt= "Running Late">
-						<img src= "{{ url }}/imgs/circusAnimal.jpg" alt= "Circus Animal">
 		  		</div>
 		  		<div class="col-sm-12 col-md-8">
 		  			<h2>Erasmus, Running Late &amp; Circus Animal Music</h2>
@@ -316,13 +355,20 @@ CV
 			<section>
 				<div class="row head" id="coursework">
 					<div class="col-sm-12">
+						<a onclick="openClose('coursework')">
+							<img id="courseworkImage" class="openClose" src="{{ url }}/imgs/minusSign.png" alt= "minus">
+						</a>
 						<h1>Coursework</h1>
-						<a href="#top"><img src= "{{ url }}/imgs/arrowUp.png" alt= "Arrow Up"></a>
+						<a href="#top">
+							<img src= "{{ url }}/imgs/arrowUp.png" alt= "Arrow Up">
+						</a>
 		  		</div>
 				</div>
+			</section>
+			<section id="courseworkContent" class="cvContent">
 				<div class="row">
 					<div class="col-sm-12 col-md-4">
-						<img src= "{{ url }}/imgs/oxfordCrest.png" alt= "Oxford Crest">
+						<img src= "{{ url }}/imgs/oxfordLogo.png" alt= "Oxford Logo">
 		  		</div>
 					<div class="col-sm-12 col-md-8">
 						<h2>IT Coursework</h2>
@@ -343,8 +389,8 @@ CV
 				<hr class="cv">
 				<div class="row">
 					<div class="col-sm-12 col-md-4">
+						<img src= "{{ url }}/imgs/rutgersBusiness.jpg" alt= "Rutgers Business">
 						<img src= "{{ url }}/imgs/rutgersCrest.png" alt= "Rutgers Crest">
-						<img src= "{{ url }}/imgs/rutgersBusiness.png" alt= "Rutgers Business">
 					</div>
 					<div class="col-sm-12 col-md-8">
 						<h2>Business Coursework</h2>

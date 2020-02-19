@@ -6,8 +6,8 @@ html, body {
 /* BODY STYLING */
 body.home {
 	font-family:"Arial";
-	background:url("/../imgs/kudamm.jpg");
-	/* background:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/imgs/kudamm.jpg"); */
+  /* background:url("/../imgs/kudamm.jpg"); */
+	background:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/imgs/kudamm.jpg");
 	background-position: center;
 	background-origin: content-box;
 	background-repeat:no-repeat;
@@ -22,8 +22,8 @@ body {
 /* HEADER STYLING*/
 header {
 	background:#6eabe5;
-	background:url("/../imgs/kudamm.jpg");
-	/* background:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/imgs/kudamm.jpg"); */
+  /* background:url("/../imgs/kudamm.jpg"); */
+	background:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/imgs/kudamm.jpg");
 	background-repeat:no-repeat;
 	background-size:100%;
 	background-position: 50% 29%;
@@ -57,8 +57,12 @@ header.home h1 {
 	color: #96bee2;
 	font-size: 285%;
 	margin-top: 1%;
-	/* text-shadow:2px 0 black; */
 	text-align:center;
+}
+
+@media (max-width: 544px) {
+  header h1 {font-size: 210%;}
+  header.home h1 {font-size: 210%;}
 }
 
 header.home h2 {
@@ -94,7 +98,7 @@ nav a {
 }
 
 @media (max-width: 544px) {
-  nav a {font-size: 78%;} /*1rem = 16px*/
+  nav a {font-size: 78%;}
 }
 
 .active {
@@ -140,13 +144,28 @@ div.dropdown-content {
 		/* outline: 1px #0068c5 solid; */
 }
 
+.navbar-toggler {
+  position:absolute;
+  top:0;
+  left:0;
+  width: 45px;
+  margin-top: 2%;
+  z-index: 9999;
+}
+
+.home .navbar-toggler {
+	color: #96bee2;
+}
+
+.navbar-toggler img {
+  width: 100%;
+}
+
 /* Links inside the dropdown */
 .dropdown-content a {
 		color: #FFFFFF;
     background:#0068c5;
     text-decoration: none;
-		/* border-radius: 0px; */
-    /* margin-top:5%; */
     display: inline-block;
 }
 
@@ -267,11 +286,18 @@ main.cv div.head {
 }
 
 main.cv div.head img {
-	width: 53px;
+	width: 52px;
 	color:#96bee2;
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+
+main.cv div.head img.openClose {
+  position: absolute;
+  left: 1.5%;
+  top: 20%;
+  width: 38px;
 }
 
 /* Education Section*/
@@ -749,12 +775,11 @@ main.coursera img {
 }
 
 /*FOOTER STYLING*/
-
 footer {
 	padding: 1%;
 	text-align:center;
-	background:url("/../imgs/kudammCut.jpg");
-	/* background:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/imgs/kudammCut.jpg"); */
+  /* background:url("/../imgs/kudammCut.jpg"); */
+	background:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/imgs/kudammCut.jpg");
 	clear:both;
 	/* text-shadow:2px 0 black; */
 	color:#FFFFFF;
@@ -778,9 +803,28 @@ footer img {
 	margin-right: 3%;
 }
 
+@media (min-width: 640px) and (max-width: 767px) {
+  #footerText {
+    font-size: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #footerText {
+    font-size: 82%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #footerText {
+    font-size: 82%;
+    margin-top: 0.5%;
+  }
+}
+
 /* FONTS */
 @font-face {
   font-family: timeburnerbold;
-	src:url("/../fonts/timeburnerbold.ttf");
-	/* src:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/fonts/timeburnerbold.ttf"); */
+  /* src:url("/../fonts/timeburnerbold.ttf"); */
+	src:url("http://localhost:8888/AnthonyBarrettiSiteSILEXBootstrap/fonts/timeburnerbold.ttf");
 }

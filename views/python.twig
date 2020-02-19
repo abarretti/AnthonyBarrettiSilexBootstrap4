@@ -1,0 +1,64 @@
+{% extends 'base.twig' %}
+
+{% block title %}
+
+Python
+
+{% endblock %}
+
+{% block body %}
+
+	<body>
+
+{% endblock %}
+
+{% block header %}
+
+	<header>
+	<button class='navbar-toggler d-block d-lg-none' data-toggle='collapse' data-target='#collapseNavBar'>
+		<img src="{{ url }}/imgs/barsWhite.png" alt="navbar toggler">
+	</button>
+
+{% endblock %}
+
+{% block main %}
+
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+        <form action="{{ url }}/index.php/python" method="get">
+          <input type="submit" name="run" value="Run">
+        </form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				{% if payload is not null %}
+					<table>
+						<tr>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Payload</th>
+						</tr>
+						{% for record in payload %}
+							<tr>
+								<td>{{ record.id }}</td>
+								<td>{{ record.name }}</td>
+								<td>{{ record.payload }}</td>
+							</tr>
+						{% endfor %}
+					</table>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</main>
+
+{% endblock %}
+
+{% block footer %}
+
+	<footer>
+
+{% endblock %}

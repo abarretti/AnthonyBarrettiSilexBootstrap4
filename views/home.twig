@@ -1,4 +1,4 @@
-{% extends 'base.twig' %}
+{% extends "base.twig" %}
 
 {% block title %}
 
@@ -9,6 +9,9 @@ Home
 {% block body %}
 
 	<body class="home">
+	<button class='navbar-toggler d-block d-lg-none' data-toggle='collapse' data-target='#collapseNavBar'>
+		<img src="{{ url }}/imgs/barsBlue.png" alt="navbar toggler">
+	</button>
 
 {% endblock %}
 
